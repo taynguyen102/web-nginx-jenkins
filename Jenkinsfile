@@ -16,7 +16,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 echo "Running Docker container..."
-                sh 'docker run -d -p 8080:80 --name my-web-app my-web-app || true'
+                sh 'docker run -d -p 9080:80 --name my-web-app my-web-app || true'
             }
         }
     }
